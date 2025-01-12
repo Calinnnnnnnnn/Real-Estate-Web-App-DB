@@ -65,7 +65,3 @@ This project is a complete application for managing real estate listings. The ap
 - **Frontend**: HTML, CSS, JavaScript, Vite.js
 - **Backend**: Node.js, Express
 - **Database**: MySQL
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-

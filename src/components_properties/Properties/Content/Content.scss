@@ -1,0 +1,102 @@
+.wrapper-content{
+   display: flex;
+   height: 100vh;
+
+    .textContainer{
+        flex: 3;
+
+        .wrapper-textContainer{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+           //height: 100%;
+
+           .boxes{
+            display: flex;
+            justify-content: space-between;
+
+            h1{
+                font-size: 25px;
+            }
+
+            h2{
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+            .searchbar{
+                .type{
+                    button{
+                        padding: 16px 36px;
+                        border: 1px solid #999;
+                        border-bottom: none;
+                        cursor: pointer;
+                        background-color: white;
+                        text-transform: capitalize;
+                       
+                        &.active{
+                           background-color: black;
+                           color: white; 
+                        }
+
+                        &:first-child{
+                            border-top-left-radius: 5px;
+                            border-right: none;
+                        }
+
+                        &:last-child{
+                            border-top-right-radius: 5px;
+                            border-left: none;
+                        }
+                    }
+                }
+
+                form{
+                    border: 1px solid #999;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 64px;
+                    gap: 5px;
+
+                    input{
+                        border: none;
+                        padding: 0px 10px;
+                        width: 500px;
+                    }
+
+                    button{
+                        border: none;
+                        cursor: pointer;
+                        background-color: #fece51;
+                        flex: 1;
+
+                        img{
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .imgContainer{
+        flex: 2;
+        background-color: #fcf5f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 115%;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+

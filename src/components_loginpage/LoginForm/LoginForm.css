@@ -1,0 +1,190 @@
+/* Resetări de bază pentru a elimina spațiile implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-login {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex; /* Folosește flexbox pentru a centra wrapper-ul */
+    justify-content: center; /* Centrează pe axa orizontală */
+    align-items: center; /* Centrează pe axa verticală */
+}
+
+.container-login > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+
+.login-h1{
+    text-align: center;
+    margin: 0;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    transition: border-color 0.3s; /* Adaugă o tranziție pentru o schimbare lină a culorii marginii */
+
+}
+
+.input-box input:focus {
+    border: 2px solid #aac1da; /* Setează o margine aurie la focus */
+    outline: none; /* Elimină conturul implicit */
+}
+
+.input-box label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box label.active {
+    top: 6.5px;
+    font-size: 12px;
+    color: #ddd;
+}
+
+.input-box input::placeholder {
+    color: transparent;
+}
+
+.icon-user {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.button-login {
+    width: 100%;
+    height: 45px;
+    background: #fff; /* Fundal alb */
+    color: black; /* Textul butonului negru */
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease; /* Tranziție lină pentru deplasare și culori */
+}
+
+.button-login:hover {
+    transform: translateX(-10px);
+    color: #000;
+    background: #aac1da;
+}
+
+.button-login::before,
+.button-login::after {
+    content: '→'; 
+    position: absolute;
+    right: 20px; 
+    color: #000; 
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease, right 0.3s ease; 
+}
+.button-login:before {
+    right: 35px; 
+}
+
+.button-login::after {
+    right: 20px; 
+}
+
+.button-login:hover::before,
+.button-login:hover::after {
+    opacity: 1; 
+    right: 20px; /* Săgețile se aliniază pe marginea dreaptă */
+}
+
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px; /* Apropie ochiul de marginea din dreapta a input-ului */
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}

@@ -1,0 +1,132 @@
+.signup-container {
+  display: flex;
+  height: 100vh; /* Ocupă întreaga înălțime a ecranului */
+  width: 100vw; /* Ocupă întreaga lățime a ecranului */
+  color:white
+}
+
+.form-container {
+  width: 40%; /* Jumătate pentru formular */
+  padding: 40px;
+  background: #252323; /* Fundal negru */
+  color: #fff; /* Text alb */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Umbra */
+  margin-left: 0;
+}
+
+.signup-container>img{
+  width: 60%;
+  background-size: cover;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  outline: none; /* Elimină conturul implicit */
+  border: 2px solid rgb(204, 186, 82); /* Setează o margine aurie la focus */
+}
+
+.button-submit-signup{
+    width: 70%;
+    height: 45px;
+    background: #fff; /* Fundal alb */
+    color: black; /* Textul butonului negru */
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease; /* Tranziție lină pentru deplasare și culori */
+}
+
+.button-submit-signup:hover{
+  transform: translateX(-10px);
+  color: #000;
+  background: #aac1da;
+}
+
+.button-submit-signup::before,
+.button-submit-signup::after {
+    content: '→'; 
+    position: absolute;
+    right: 20px; 
+    color: #000; 
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease, right 0.3s ease; 
+}
+.button-submit-signup:before {
+    right: 35px; 
+}
+
+.button-submit-signup::after {
+    right: 20px; 
+}
+
+.button-submit-signup:hover::before,
+.button-submit-signup:hover::after {
+    opacity: 1; 
+    right: 20px; /* Săgețile se aliniază pe marginea dreaptă */
+}
+
+.error{
+  color:red;
+  font-size: 12px;
+}
+
+.radio-group {
+  display: flex; /* Flexbox pentru alinierea radio button-urilor */
+  gap: 70px; /* Spațiu între opțiuni */
+  align-items: center; /* Alinează vertical elementele */
+}
+
+.radio-group label {
+  display: flex; /* Flexbox pentru etichetele radio */
+  align-items: center; /* Alinează cercurile și textul */
+  gap: 0px; /* Spațiu între radio button și text */
+}
+
+
+.animated-text {
+  position: absolute;
+  top: 40%; /* Poziționează textul pe verticală */
+  left: 63%; /* Centrează pe orizontală */
+  transform: translateX(-50%); /* Centrează complet față de mijlocul paginii */
+  width: 80%; /* Controlează lățimea textului pentru a preveni spargerea lui */
+  max-width: 600px; /* Oferă o lățime maximă pentru a nu se întinde prea mult */
+  color: white;
+  font-size: 24px;
+  text-align: center; /* Centrează textul în interiorul div-ului */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: larger;
+}
+
+
+
+
+

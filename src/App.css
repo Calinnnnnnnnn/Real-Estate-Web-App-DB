@@ -1,0 +1,37 @@
+.App{
+    position: relative;
+    overflow-x: clip;
+
+    .App_listpage{
+        .layout-navbar{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+}
+
+.home-page>:nth-child(1){
+    background: var(--black);
+    position: relative;
+}
+
+.white-gradient{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: rgba(255, 255, 255, 0.522);
+    filter: blur(100px);
+    border-radius: 100px;
+}
+
+.properties-page {
+    background-color: white; /* Fundal alb pentru întreaga pagină */
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; 
+    display: flex;
+    flex-direction: column;
+}

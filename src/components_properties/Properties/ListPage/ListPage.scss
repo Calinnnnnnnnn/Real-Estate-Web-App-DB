@@ -1,0 +1,57 @@
+.listPage{
+    display: flex;
+    height: 100vh;
+    padding-right: 100px;
+    padding-left: 100px;
+    
+
+    .listContainer{
+        flex: 3;
+        height: 100%;
+
+        .listContainer-wrapper{
+            height: 100%;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            overflow-y: scroll;
+            padding-bottom: 50px;
+
+            .no-properties-message {
+                text-align: center;
+                margin-top: 50px;
+            
+                h2 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #555;
+                }
+            
+                p {
+                    font-size: 16px;
+                    color: #777;
+                }
+            }
+            
+            .loading {
+                text-align: center;
+                margin-top: 50px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #555;
+            }
+        }
+    }
+    .mapContainer{
+        flex: 2;
+        height: 100%;
+        background-color: #fcf5f3;
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+}

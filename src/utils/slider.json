@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Aliva Priva Jardin",
+    "price": "1.50MIL",
+    "detail": "1204 Sunset Boulevard, Hollywood Hills, Los Angeles, CA",
+    "image": "./vila1.png"
+  },
+  {
+    "name": "LUX Garden City",
+    "price": "1.87MIL",
+    "detail": "4256 Strada Republicii, Poiana Brașov, BV",
+    "image": "./vila2.png"
+  },
+  {
+    "name": "Pipera Villa",
+    "price": "2.8MIL",
+    "detail": "313B Strada Soarelui, Pipera, Sector 1, Bucuresti, B",
+    "image": "./vila3.png"
+  },
+  {
+    "name": "Aliva Mansion",
+    "price": "793.000",
+    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+    "image": "./vila4.png"
+  },
+  {
+    "name": "Asatti Garden Boutique",
+    "price": "500.353",
+    "detail": "2526 Strada Armoniei, Marasti, Cluj-Napoca, CJ",
+    "image": "./vila5.png"
+  },
+  {
+    "name": "North Primaverii Villa",
+    "price": "2.853MIL",
+    "detail": "9072 Strada Ambasadei, Primaverii, Sector 1, Bucuresti, B",
+    "image": "./vila6.png"
+  }
+]

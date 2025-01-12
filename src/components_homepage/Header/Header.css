@@ -1,0 +1,49 @@
+.h-wrapper {
+    color: white;
+}
+
+.h-container {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.h-menu {
+    gap: 2rem;
+}
+
+.h-menu > *:hover {
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info span {
+    font-size: 14px;
+}
+
+.user-info button {
+    margin-left: 10px;
+}
+
+/* Stil pentru butonul Admin Page */
+.admin-button {
+    background-color: #ff6347; /* Culoare vibrantă */
+    color: white;
+    font-weight: bold;
+    border: 2px solid #ff4500; /* Bordură distinctă */
+    border-radius: 8px; /* Colțuri rotunjite */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-button:hover {
+    background-color: #ff4500; /* Culoare mai intensă la hover */
+    transform: scale(1.05); /* Efect de mărire */
+}

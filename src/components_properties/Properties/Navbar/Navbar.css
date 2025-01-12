@@ -1,0 +1,111 @@
+nav {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    
+    a {
+        transition: all 0.4s ease;
+        
+        &:hover {
+            scale: 1.05;
+        }
+    }
+
+    .left {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 28px;
+            }
+        }
+
+        .go-home {
+            display: flex;
+            align-items: center; /* Aliniază pictograma și textul pe verticală */
+            gap: 10px; /* Spațiu între pictogramă și text */
+            text-decoration: none; /* Elimină sublinierea implicită a link-ului */
+            font-family: Arial, sans-serif;
+            font-size: 1.2rem; /* Dimensiune text confortabilă */
+            color: #333; /* Culoare text */
+        
+            img {
+                width: 24px; /* Dimensiunea pictogramei */
+                height: 24px;
+                transition: transform 0.2s ease, filter 0.3s ease; /* Tranziție pentru hover */
+            }
+        
+            a {
+                text-decoration: none; /* Elimină sublinierea */
+                color: inherit; /* Preia culoarea definită pentru container */
+                transition: color 0.3s ease; /* Schimbare lină de culoare la hover */
+            }
+        
+            &:hover {
+                a {
+                    color: #fece51; /* Culoare text la hover */
+                }
+        
+                img {
+                    transform: scale(1.1); /* Ușoară mărire a pictogramei */
+                    filter: brightness(1.2); /* Crește luminozitatea pictogramei */
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: #fcf5f3;
+        height: 100%;
+
+        a {
+            padding: 12px 24px;
+            margin: 20px;
+        }
+
+        .register {
+            background-color: #fece51;
+        }
+
+        .user_administrate {
+            padding-right: 30px;  /* Ajustează distanța față de marginea dreaptă */
+            font-size: large;
+            font-weight: 500;
+            
+            .user-info {
+                display: flex;
+                gap: 10px;  /* Spatiu între email și butonul de logout */
+                align-items: center;  /* Aliniază textul și butonul pe aceeași linie */
+            }
+
+            .logout-button {
+                background-color: #fece51;
+                border: none;
+                padding: 10px 20px; /* Adăugăm padding pentru a face butonul mai mare și mai vizibil */
+                font-size: medium;
+                font-weight: 400;
+                cursor: pointer;  /* Adăugăm cursor pointer pentru buton */
+                border-radius: 5px;  /* Colțuri rotunjite pentru un aspect mai plăcut */
+                transition: all 0.3s ease; /* Adăugăm o tranziție lină */
+            }
+
+            .logout-button:hover {
+                background-color: #f4b731;  /* Schimbă culoarea butonului la hover */
+            }
+        }
+    }
+}

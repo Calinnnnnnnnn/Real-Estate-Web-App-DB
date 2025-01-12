@@ -24,6 +24,8 @@ This project is a complete application for managing real estate listings. The ap
    git clone https://github.com/user/real-estate-project.git
    cd real-estate-project
    ```
+1.1 Node Modules Folder is not included in the repository. Please note that you need this folder, so please install all the tools needed.
+
 2. Install dependencies:
    ```bash
    npm install
